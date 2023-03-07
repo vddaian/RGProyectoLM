@@ -1,0 +1,15 @@
+/*IMPORTACION FUENTES TEXTO*/
+@font-face {
+    font-family: 'Comfortaa Regular';
+    src: url(./fonts/Comfortaa-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*FUENTE PARA TITULOS*/
+@font-face {
+    font-family: 'Display';
+    src: url(./fonts/The_Display_St.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
