@@ -1,0 +1,62 @@
+/*IMPORTACION FUENTES TEXTO*/
+@font-face {
+    font-family: 'Comfortaa Regular';
+    src: url(./fonts/Comfortaa-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*FUENTE PARA TITULOS*/
+@font-face {
+    font-family: 'Display';
+    src: url(./fonts/The_Display_St.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root{
+    --prm-bg-color : #04080f;
+    --sec-bg-color : #F0EFF4;
+    --border-color : #C7BEF3;
+    --font-color: black;
+    --hover-font-color: #9D8DF1;
+    --font-family: 'Comfortaa Regular';
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+header {
+    background-color: var(--prm-bg-color);
+    padding-top: 20px;
+}
+.navbar{
+    display: flex;
+    background-color: var(--sec-bg-color);
+}
+.logoOaxis{
+}
+.navFirstList{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+}
+.navLink{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--font-color) ;
+    font-family: var(--font-family);
+}
+.navLink:hover{
+    color: var(--hover-font-color);
+    animation: fontFlashAni 1.6s ease 1;
+}
+@keyframes fontFlashAni {
+    0%, 35%, 80%{color: var(--font-color)}
+    20%, 60%, 90% {color: var(--hover-font-color)}
+}
