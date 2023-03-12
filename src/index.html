@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,86 @@
     <title>OAXIS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
+    <header>6
         <nav class="navbar">
-            <img src="img/LogoOaxis.png" alt="Logo Oaxis" class="logoOaxis">
+            <input type="checkbox" class="navCheckHm">
+            <div class="hmMenu">
+                <hr />
+                <hr />
+                <hr />
+            </div>
+            <img src="img/LogoOaxis.png" alt="Oaxis Logo" class="logoOaxis">
             <ul class="navFirstList">
-                <li><a href="index.html" class="navLink">HOME</a></li>
-                <li><a href="#" class="navLink">JUEGOS</a></li>
-                <li><a href="#" class="navLink">TIENDAS</a></li>
-                <li><a href="#" class="navLink">EVENTOS</a></li>
-                <li><a href="#" class="navLink">PROXIMAMENTE</a></li>
+                <li class="navFirstElement"><a href="index.html" class="navLink">HOME</a></li>
+                <li class="navFirstElement"><a href="#" class="navLink">JUEGOS</a>
+                    <ul class="navSecondList">
+                        <li><a href="" class="navLink">FOXY</a></li>
+                        <li><a href="" class="navLink">PEPA</a></li>
+                        <li><a href="" class="navLink">USA vs URSS</a></li>
+                        <li><a href="" class="navLink">PP TUBO ESCAPE</a></li>
+                        <li><a href="" class="navLink">JOSE Y ELISA</a></li>
+                    </ul>
+                </li>
+                <li class="navFirstElement"><a href="#" class="navLink">TIENDAS</a>
+                    <ul class="navSecondList">
+                        <li><a href="" class="navLink">HUESCA</a></li>
+                        <li><a href="" class="navLink">ZARAGOZA</a></li>
+                        <li><a href="" class="navLink">BARCELONA</a></li>
+                        <li><a href="" class="navLink">MADRID</a></li>
+                        <li><a href="" class="navLink">VALENCIA</a></li>
+                    </ul>
+                </li>
+                <li class="navFirstElement"><a href="#" class="navLink">EVENTOS</a>
+                    <ul class="navSecondList">
+                        <li><a href="" class="navLink">08/01/2023</a></li>
+                        <li><a href="" class="navLink">09/01/2023</a></li>
+                        <li><a href="" class="navLink">14/05/2023</a></li>
+                        <li><a href="" class="navLink">24/08/2023</a></li>
+                        <li><a href="" class="navLink">30/12/2023</a></li>
+                    </ul>
+                </li>
             </ul>
+            <input type="checkbox" name="checkUser" class="navCheckUserLogo">
+            <img src="img/userIco.png" alt="User Logo" class="logoUser">
+            <div class="navUserLog">
+                <form>
+                    <label for="userName" class="navLabel">Usuario</label> <br>
+                    <input type="text" name="userName" class="navInput"><br>
+                    <label for="password" class="navLabel">Contraseña</label><br>
+                    <input type="password" name="password" class="navInput"><br>
+                    <button type="submit" class="buttonStyle">Iniciar Sesion</button>
+                    <button class="buttonStyle"><a href="#" class="navLink">Unirse</a></button>
+                </form>
+            </div>
         </nav>
     </header>
     <section>
-        <div class="proyectsBlock">
+        <h2 class="proyectsBlockTitle">PROYECTS</h2>
+        <div class="proyectsBlock" id="pr1">
             <div class="proyectBlock">
-                <img src="img/fox-with-butterfly-in-nose_3840x2160_xtrafondos.com.jpg" alt="" class="proyectImg">
-                <h4>The Walking Sage</h4>
+                <img src="img/fox-with-butterfly-in-nose_3840x2160_xtrafondos.com.png" alt="" class="proyectImg">
+                <h4 class="proyectTitle">Foxy</h4>
             </div>
             <div class="proyectBlock">
-                <img src="img/fox-with-butterfly-in-nose_3840x2160_xtrafondos.com.jpg" alt="" class="proyectImg">
-                <h4>The Walking Sage</h4>
+                <img src="img/granjica.PNG" alt="" class="proyectImg">
+                <h4 class="proyectTitle">Pepa & The Potato</h4>
             </div>
             <div class="proyectBlock">
-                <img src="img/fox-with-butterfly-in-nose_3840x2160_xtrafondos.com.jpg" alt="" class="proyectImg">
-                <h4>The Walking Sage</h4>
+                <img src="img/shooter.PNG" alt="" class="proyectImg">
+                <h4 class="proyectTitle">USA vs URSS Simulator</h4>
             </div>
             <div class="proyectBlock">
-                <img src="img/fox-with-butterfly-in-nose_3840x2160_xtrafondos.com.jpg" alt="" class="proyectImg">
-                <h4>The Walking Sage</h4>
+                <img src="img/coches.PNG" alt="" class="proyectImg">
+                <h4 class="proyectTitle">Puerta Puerta Maletero Tubo Escape</h4>
             </div>
             <div class="proyectBlock">
-                <img src="img/fox-with-butterfly-in-nose_3840x2160_xtrafondos.com.jpg" alt="" class="proyectImg">
-                <h4>The Walking Sage</h4>
+                <img src="img/historia.PNG" alt="" class="proyectImg">
+                <h4 class="proyectTitle">Jose y su hija Elisa</h4>
             </div>
         </div>
     </section>
 </body>
+
 </html>
