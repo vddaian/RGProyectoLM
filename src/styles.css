@@ -13,3 +13,211 @@
     font-style: normal;
     font-weight: normal;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0eff4;
+    overflow-x: hidden;
+}
+
+.circulo {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+.circulo1 {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+.texto {
+    width: 50%;
+    margin-left: -10px;
+    margin-top: -15px;
+    display: inline-block;
+    color: #04080f;
+    padding: 40px;
+    font-family: "Comfortaa Regular";
+    text-align: justify;
+}
+
+.texto2 {
+    width: 60%;
+    margin-left: -10px;
+    display: inline-block;
+    margin-top: -15px;
+    color: #04080f;
+    padding: 40px;
+    font-family: "Comfortaa Regular";
+    text-align: justify;
+}
+
+.imagen_texto1 {
+    width: 45%;
+    margin-left: 50px;
+    display: inline-block;
+    justify-content: space-evenly;
+    background-color: #f0eff4;
+    align-items: center;
+}
+
+.imagen_texto2 {
+    width: 45%;
+    margin-left: 50px;
+    display: inline-block;
+    justify-content: space-evenly;
+    background-color: #f0eff4;
+    align-items: center;
+}
+
+.texto_ruben {
+    width: 40%;
+    margin-top: -10px;
+    display: inline-block;
+    color: #04080f;
+    padding: 40px;
+    font-family: "Comfortaa Regular";
+    vertical-align: bottom;
+}
+
+.texto_estela {
+    width: 35%;
+    margin-top: -10px;
+    display: inline-block;
+    color: #04080f;
+    padding: 40px;
+    font-family: "Comfortaa Regular";
+    vertical-align: bottom;
+}
+
+.texto_valen {
+    width: 36%;
+    margin-top: -10px;
+    display: inline-block;
+    color: #04080f;
+    padding: 40px;
+    font-family: "Comfortaa Regular";
+    vertical-align: bottom;
+}
+
+.texto_pregunta {
+    display: inline-flex;
+    background-color: #c7bef3;
+}
+
+.mover_texto {
+    display: inline-block;
+    width: 49%;
+    margin-left: 1%;
+}
+
+.fondo_imagenes {
+    display: inline-block;
+    width: 47%;
+}
+
+.img1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.img2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-top: 20px;
+}
+
+.img3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.mover_texto2 {
+    display: inline-block;
+}
+
+.texto_grande {
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 5%;
+    color: #04080f;
+    padding: 40px;
+    font-family: "Comfortaa Regular";
+    text-align: justify;
+}
+
+.texto_grande h1 {
+    margin-bottom: 12%;
+}
+
+.mover_texto3 {
+    display: flex;
+    align-items: center;
+    margin-left: 9%;
+}
+
+.mover_texto4 {
+    display: inline-block;
+    margin-top: -10px;
+}
+
+@media (max-width: 825px) {
+
+    .imagen_texto1,
+    .imagen_texto2 {
+        width: 115%;
+    }
+
+    .texto2 {
+        width: 50%;
+    }
+
+    .mover_texto,
+    .texto_grande {
+        width: 80%;
+        margin-left: 5px;
+        margin: auto;
+    }
+
+    .fondo_imagenes {
+        width: 115%;
+    }
+
+    .texto_pregunta {
+        display: inline-block;
+    }
+
+    .texto_ruben,
+    .texto_estela,
+    .texto_valen {
+        margin-top: 2%;
+    }
+
+    .texto_estela {
+        margin-left: 20px;
+
+    }
+
+    .mover_texto3 {
+        margin-left: 30px;
+    }
+}
