@@ -157,7 +157,7 @@ input {
 }
 
 .navCheckHm {
-    display: nonegit a;
+    display: none;
     position: absolute;
     right: 56%;
     width: 40%;
