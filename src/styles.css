@@ -199,6 +199,96 @@ input {
     }
 }
 
+/*---ESTILO-DEL-BLOQUE-DE-PROYECTOS---*/
+.proyectsBlockTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 6%;
+    height: 250px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    background-color: var(--sec-bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.proyectsBlock {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    margin: 10px;
+    width: auto;
+    background-color: var(--sec-bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    height: 250px;
+}
+
+.proyectBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectImg {
+    height: 124px;
+    width: 220px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+}
+
+.proyectTitle {
+    margin: 10px;
+}
+
+.proyectInfo {
+    display: none;
+    overflow-y: auto;
+    height: 250px;
+    width: auto;
+    margin: 10px;
+    background-color: var(--sec-bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.proyectInfo .proyectTitle {
+    text-decoration: underline;
+}
+
+.proyectText {
+    text-align: justify;
+    margin: 20px;
+}
+
+/*SCROLL-BAR-STYLE*/
+::-webkit-scrollbar {
+    width: 15px;
+    margin: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--seg-bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(149, 99, 151, 0.596);
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+}
+
+/*MEDIA-QUERYS*/
 @media (max-width: 825px) {
 
     .hmMenu,
@@ -222,20 +312,23 @@ input {
         border-right: 2px solid var(--border-color);
         border-bottom: 2px solid var(--border-color);
     }
-    .navSecondList{
+
+    .navSecondList {
         display: none;
         flex-direction: column;
         justify-content: space-evenly;
         position: fixed;
-        top:73px;
+        top: 73px;
         left: 202px;
         border-left: none;
         width: 250px;
         height: 325px;
     }
-    .navSecondList li{
+
+    .navSecondList li {
         width: 100%;
     }
+
     .navUserLog {
         top: 71px;
     }
@@ -252,88 +345,8 @@ input {
     .navCheckHm:checked~.navFirstList {
         display: flex;
     }
+
     .navFirstElement:hover>.navSecondList {
         display: flex;
     }
 }
-
-/*---ESTILO-DEL-BLOQUE-DE-PROYECTOS---*/
-.proyectsBlockTitle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    float: left;
-    margin: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 6%;
-    height: 250px;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    background-color: var(--sec-bg-color);
-    border: 2px solid var(--border-color);
-    border-radius: 5px;
-}
-.proyectsBlock {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow-y: auto;
-    margin: 10px;
-    width: auto;
-    background-color: var(--sec-bg-color);
-    border: 2px solid var(--border-color);
-    border-radius: 5px;
-    height: 250px;
-}
-
-.proyectBlock {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.proyectImg {
-    height: 124px;
-    width: 220px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 2px solid var(--border-color);
-}
-
-.proyectTitle {
-    margin: 10px;
-}
-.proyectInfo{
-    display: none;
-    overflow-y: auto;
-    height: 250px;
-    width: auto;
-    margin: 10px;
-    background-color: var(--sec-bg-color);
-    border: 2px solid var(--border-color);
-    border-radius: 5px;
-}
-.proyectInfo .proyectTitle{
-    text-decoration: underline;
-}
-.proyectText{
-    text-align: justify;
-    margin: 20px;
-}
-/*SCROLL-BAR-STYLE*/
-::-webkit-scrollbar{
-    width: 15px;
-    margin: 10px;
-}
-::-webkit-scrollbar-track {
-    background: var(--seg-bg-color);
-    border: 2px solid var(--border-color);
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb {
-    background: rgba(149, 99, 151, 0.596);
-    border: 2px solid var(--border-color);
-    border-radius: 5px;
-  }
